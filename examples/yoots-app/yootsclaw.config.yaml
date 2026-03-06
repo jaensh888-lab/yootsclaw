@@ -1,0 +1,31 @@
+version: "1.0"
+name: yalat-bot
+
+telegram:
+  owner_id: 889067839
+  bots:
+    - token_env: TELEGRAM_MASTER_TOKEN
+      role: main
+
+database:
+  provider: turso
+  url_env: TURSO_URL
+  token_env: TURSO_AUTH_TOKEN
+
+ai:
+  provider: mixed
+  models:
+    default: claude-haiku-4-5-20251001
+    smart: claude-sonnet-4-5-20251001
+    research: moonshot-v1-128k
+
+security:
+  dmPolicy: allowlist
+  allowlist:
+    telegram: [889067839]
+
+features:
+  whatsapp: true
+  content_pipeline: true
+  mini_app_builder: true
+  browser: true

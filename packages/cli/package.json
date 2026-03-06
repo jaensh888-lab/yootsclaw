@@ -1,0 +1,9 @@
+{
+  "name": "yootsclaw",
+  "version": "0.1.0",
+  "description": "AI-agent platform CLI",
+  "bin": {
+    "yootsclaw": "./bin/yootsclaw.js"
+  },
+  "engines": { "node": ">=22.0.0" }
+}

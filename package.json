@@ -1,0 +1,16 @@
+{
+  "name": "yootsclaw",
+  "version": "0.1.0",
+  "description": "AI-agent platform. Any channel. Any API.",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "node packages/cli/bin/yootsclaw.js start",
+    "dev": "node packages/core/gateway/index.js"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
